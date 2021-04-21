@@ -1,0 +1,25 @@
+cpp_ex3
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+HashMap.hpp
+SpamDetector.cpp
+README
+
+== EXERCISE DESCRIPTION ==
+In this exercise I implemented a generic hashmap using, as suggested by course staff, a dynamic
+array of vectors, each vector containing pairs of <KeyT, ValueT>.
+Insert and erase functions were performed using the private helper functions which check if
+resizing the table was necessary.
+The main obstacle of this exercise was to properly implement the iterator in order to allow for
+each loops to work properly on hashmap. I first tried using 2 indexes, index of bucket and index of
+current cell in bucket, but decided to take use of the built iterator of each bucket, i.e. vector,
+in order to make it easier with calculating begin() and end() for each bucket.
+
+The second part , SpamDetector, I parse the text files, and throw an exception (std::invalid_
+argument) in case of any invalid input, which is caught in the main. if any memory error was
+thrown in hashmap, it is also caught in main. If everything is valid, we iterate over each pair
+in the hashmap and calculate the score, and print SPAM\NOT_SPAM accordingly.
+

@@ -1,0 +1,17 @@
+c_ex3
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+infi.c
+NumericalAnalyzer.c
+README
+Makefile
+
+== EXERCISE DESCRIPTION ==
+The infi.c file implements the integral and derivative functions.
+NumericalAnalyzer receives the input, validate it, and prints the values of the program.
+
+C concepts I used for this exercise: pointers to functions, creating libraries, creating and using
+Makefile.

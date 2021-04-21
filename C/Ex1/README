@@ -1,0 +1,23 @@
+c_ex1
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+DrumExperiment.c
+README
+
+== EXERCISE DESCRIPTION ==
+In this exercises, we used input received from user to perform the mathematical concept of
+convolution.
+Using the skeleton of the ReadLines program we received, I read all 3 lines of the input, and
+after validating every aspect of the lines I performed the following:
+1. Centralize the input arrays
+2. Normalize the input arrays
+3. Perform n-convolutions
+4. Calculate max and print the results
+
+In this exercise, I used the basics of C - for/while loops, working with arrays, and using static
+arrays.
+
+All the constant values in the program were declared as constants using #define.

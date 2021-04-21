@@ -1,0 +1,28 @@
+cpp_ex2
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+Fractal.h
+Fractal.cpp
+FractalDrawer.cpp
+README
+
+== EXERCISE DESCRIPTION ==
+In this exercise we implemented a program that draws 3 different types of fractals.
+My initial solution had Fractal as an abstract class and 3 classes for each fractal that
+derived from Fractal and had overwritten the draw() method.
+However, due to the similarity of the code, and in order to take use of polymorphism and c++ power
+to full extent, I added another class, SierpinskiFractal, which derives from Fractal and is the
+base class for both Sierpinski's, the carpet and sieve, due to the same mechanism of checking the
+tiles in them. In order to keep this class fractal I did not call the draw() method here, but
+rather in the derived concrete classes, as 1 line implementation in the header file.
+Fractal, an abstract class that implements the rule of five for all of its derived classes.
+The draw method is pure virtual under the abstract class, however, cpp allows to define virtual
+methods and so the when this method is overwritten (due to being virtual) the derived classes
+call the this method with their own depth and cell size and their own tile checking functions.
+The main program parses the text file and handles exceptions if invalid input was encountered or
+memory allocation failed.
+For simplicity, I used deque that stores fractal pointers to take advantage of polymorphism and
+to make printing from last to first easier using the push_front method.

@@ -1,0 +1,21 @@
+cpp_ex1
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+GField.h
+GField.cpp
+GFNumber.h
+GFNumber.cpp
+IntegerFactorization.cpp
+README
+
+== EXERCISE DESCRIPTION ==
+In this exercise we implemented a program to find the prime factors of 2 numbers from a finite
+galois field.
+I implemented the GField class with fields of char and degree and the GFNumber class
+with fields of number value and field.
+The algorithms used to find the prime factors are Pollard's Rho algorithm and the Brute Force
+algorithm which implement the Trail Division method.
+

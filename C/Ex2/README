@@ -1,0 +1,20 @@
+c_ex2
+mordoch.ron
+*********
+######
+
+== FILES SUBMITTED ==
+TreeAnalyzer.c
+README
+
+== EXERCISE DESCRIPTION ==
+Receiving input from command line, we validate the input gathered from cli.
+After we validate the text file and create a graph from it, we check the 2 nodes received exist
+in the graph, and validate the graph is indeed a tree.
+Once we validated all of that, we run DFS, implemented by the recursive explore function, and BFS,
+implemented using a queue, to get the data we need to print results.
+
+In this exercise I used advanced C techniques:
+- Dynamic memory allocation for the structs
+- Pointers to pointers, keeping pointer to array of nodes
+- Error propagating from different functions
